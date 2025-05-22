@@ -7,8 +7,9 @@
         <meta name="author" content="Cristian Adonay Reyes Guardado" />
         <meta name="copyright" content="2025 CARG" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Videojuegos en primera persona, Cristian Adonay Reyes Guardado</title>
+        <title>Videojuegos en primera persona, JAVIER ALEXANDER CRUZ GALDAMEZ</title>
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="manifest" href="./manifest.json"/>
     </head>
     <body>
 
@@ -32,6 +33,11 @@
         <script src="https://cdn.jsdelivr.net/npm/three@latest/examples/js/controls/OrbitControls.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/three@latest/examples/js/controls/PointerLockControls.js"></script>
         <script src="js/script.js" type="module"></script>
+        <script>
+            if('serviceWorker' in navigation){
+                navigaton.serviceWorker.register('sw.js',{scope:'./'});
+            }
+        </script>
 
     </body>
 </html>
